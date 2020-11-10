@@ -1,0 +1,27 @@
+language: java
+
+git:
+    quiet: false
+    
+
+before_install:
+    - gradle installWrapper
+    
+job:
+    include:
+        - jdk: openjdk8
+        os: linux
+        - jdk: openjdk11
+        os: linux
+        - jdk: openjdk11
+        os: osx
+    allow_failures:
+    - os: osx
+    
+    
+Notifications:
+    email:
+        recipients:
+            - s4alurba@uni-trier.de
+            on_success: never
+            on_failure: always
