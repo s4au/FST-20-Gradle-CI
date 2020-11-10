@@ -4,6 +4,7 @@ git:
 quiet: false
     
 before_install:
+- brew install gradle
 - gradle installWrapper
     
 job:
