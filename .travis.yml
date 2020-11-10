@@ -7,6 +7,8 @@ before_install:
 - gradle installWrapper
     
 job:
+allow_failures:
+- os: osx
 include:
 -jdk: openjdk8
 os: linux
@@ -14,8 +16,6 @@ os: linux
 os: linux
 -jdk: openjdk11
 os: osx
-allow_failures:
-- os: osx
      
 Notifications:
 email:
