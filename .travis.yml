@@ -25,3 +25,6 @@ Notifications:
             - s4alurba@uni-trier.de
             on_success: never
             on_failure: always
+            
+            
+script: ./gradlew buildCore
