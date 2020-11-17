@@ -2,7 +2,7 @@ package de.unitrier.st.core;
 
 //import de.unitrier.st.ui.Ui;
 
-public class Main {
+public class Main 
 
     public static void main(String[] args) {
         DataLoader dataLoader = new DataLoader();
