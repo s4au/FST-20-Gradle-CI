@@ -18,8 +18,8 @@ jobs:
 notifications:
   email:
     recipients:
-    - s4alurba@uni-trier.de
-  on_success: never
+      - s4alurba@uni-trier.de
+  on_success: always
   on_failure: always
     
 script: ./gradlew buildCore
