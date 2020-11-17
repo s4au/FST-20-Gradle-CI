@@ -37,8 +37,8 @@ jobs:
       - name: Grant execution permission
         run: chmod +x gradlew
 
-      - name: Build
-        run: ./gradlew build
+      #- name: Build
+      #  run: ./gradlew build
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
